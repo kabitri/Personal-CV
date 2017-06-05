@@ -1,0 +1,250 @@
+\documentclass[12pt]{article}
+\usepackage{calc}
+\reversemarginpar
+\usepackage{marvosym}
+\usepackage[paper=letterpaper,      
+            marginparwidth=1.2in,   
+            marginparsep=.05in,      
+            margin=1in,             
+            includemp]{geometry}
+
+\setlength{\parindent}{0in}
+\usepackage{paralist}
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+                    \arabic{page} of \protect\pageref*{LastPage} 
+                    \hfill \,}}
+
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+\newcommand{\makeheading}[1]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+                {\large \bfseries #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+\renewcommand{\section}[2]%
+        {\pagebreak[2]\vspace{1.3\baselineskip}%
+         \phantomsection\addcontentsline{toc}{section}{#1}%
+         \hspace{0in}%
+         \marginpar{
+         \raggedright \scshape #1}#2}
+
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+\newenvironment{lonelist}[1][\enskip\textbullet]%
+        {\vspace{-\baselineskip}\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{compactitem}[#1]}{\end{compactitem}}
+\newcommand{\blankline}{\quad\pagebreak[2]}
+
+\begin{document}
+\makeheading{Kabitri Chattopadhyay}
+
+\section{Contact Information}
+
+\newlength{\rcollength}\setlength{\rcollength}{2.25in}%
+%
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+     Department of Physics        &  \Mobilefone{+49 162 885 7533} \\
+     University of Oldenburg      &  \\
+     Carl-von-Ossietzky-Str. 9-11 &  \\
+     26129 Oldenburg, Germany     &  \href{kabitri.chattopadhyay@uni-oldenburg.de}
+                                    {\nolinkurl{kabitri.chattopadhyay@uni-oldenburg.de }}  \\
+                                 &  \href{kabitri.chattopadhyay@gmail.com}
+                                    {\nolinkurl{kabitri.chattopadhyay@gmail.com}}  \\
+\end{tabular}
+
+\section{Citizenship}
+%
+Indian
+
+\section{Date of birth}
+%
+08/05/1985
+
+\section{Marital Status}
+Married
+
+\section{Education}
+
+      Ph.D. in Physics, March 2013 - in progress  \\
+      Department of Physics, University of Oldenburg, Oldenburg, Germany \\     
+      Dissertation Topic : Optimization of spatial balancing and storage needs 
+                              \hspace*{3.6cm} for large-scale power system 
+                             integration of fluctuating \\ 
+                             \hspace*{3.6cm}  solar energy : An investigation for European countries \\
+
+      Advisor :  Prof. Dr. J{\"u}rgen Parisi \\
+      Co-advisor: Dr. Detlev Heinemann and Dr. Elke Lorenz \\
+
+\blankline
+
+     Research Intern \\
+     Max Planck Instit{\"u}t f{\"u}r Chemie, Mainz, Germany \\
+     Topic: An investigation on dust transport events from the Saharan desert \\
+     \hspace*{1.2cm} to the Mediterranean region using WRF-Chem and EMAC models \\
+     January 2012 - February 2013
+
+\blankline
+
+      Junior Research Fellow \\
+      Physical Research Laboratory, Ahmedabad, India. \\
+      Topic: Tracer distribution study using chemical transport model MOZART \\ 
+      July 2009 - November 2011.
+
+\pagebreak
+
+      M.Sc. in Atmospheric Sciences \\
+      Calcutta University, India\\
+      Thesis title: Prediction of pre-monsoon thunderstorm using Ant Colony \\
+                         \hspace*{2.2cm} Optimization technique. \\
+      August 2007 - May 2009. 
+
+\blankline
+
+      B.Sc. in Chemistry (Honours), Physics, Mathematics,  \\
+      Scottish Church College, Calcutta University, India \\
+      August 2004 - July 2007.
+
+\section{Awards} 
+%
+  First class first in M.Sc Atmospheric Sciences, 2009.
+
+\blankline
+
+   PRL Doctoral Fellowship, 2009 \\
+   Physical Research Laboratory, Ahmedabad, India.
+   
+\blankline
+
+   TOEFL score: 101 \\
+   Date of examination: 12.08.2011.
+   
+\section{Languages}
+  Bengali (excellent proficiency), English (excellent proficiency), German (basic).
+
+\section{Publications}
+ 
+\begin{enumerate}
+
+  \item {\sl K. Chattopadhyay}\footnote{Last name changed to Chattopadhyay from Nag in 2014}, A. Kies, 
+            E. Lorenz, L. von Bremen, and D. Heinemann :
+        {\sf The impact of different PV module configurations on storage and additional balancing needs 
+              for a fully renewable European power system,}               \\
+              Renewable Energy {\bf(under review)}.
+              
+  \item A. Kies, {\sl K. Nag}, L. von Bremen, E. Lorenz, and D. Heinemann :
+        {\sf Investigation of balancing effects in long term renewable energy feed-in with respect to the transmission grid,} \\
+              Adv. Sci. Res., {\bf 12}, 91-95, 2015.
+  
+\end{enumerate}
+
+\section{Conference Presentations}
+
+\begin{enumerate}
+
+\item A. Kies, L. von Bremen, B. Schyska, {\sl K. Chattopadhyay}, E. Lorenz, and  D. Heinemann :
+        {\sf The Cost-Optimal Distribution of Wind and Solar Generation Facilities in a Simplified Highly 
+               Renewable European Power System}, \\
+            EGU2016 (Oral),
+            Vienna, Austria (19 April 2016).
+            
+\item  A. Kies, {\sl K. Nag}, L. von Bremen, E. Lorenz, and D. Heinemann :
+           {\sf Effects of Scandinavian hydro power on storage needs in a fully renewable 
+                 European power system for various transmission capacity scenarios}, \\
+            EGU2015 (Oral), 
+            Vienna, Austria (14 April 2015).
+            
+\item A. Kies, L. von Bremen, D. Heinemann, {\sl K. Nag},  and  E. Lorenz : 
+           {\sf Impacts of North African CSP and Norwegian hydro power on storage needs in a European 
+                 energy system dominated by Renewables.}, \\
+            13th Wind Integration Workshop (Oral),
+            Berlin, Germany (12 November 2014).
+                                                                                                  
+            
+\item {\sl K. Nag}, A. Kies, E. Lorenz, L. von Bremen, and D.Heinemann :
+           {\sf Simulation of long term solar power feed-in and solar balancing potential in European countries}, \\
+           14th EMS/10th ECAC conference (Oral),
+           Prague, Czech Republic (07 October 2014).
+ 
+\item A. Kies, {\sl K. Nag}, L. von Bremen, E. Lorenz, and D. Heinemann :
+           {\sf Simulation of long term renewable energy feed-in for European power system studies}, \\
+           EGU2014 (Poster),
+           Vienna, Austria (28 April 2014).
+ 
+\end{enumerate}
+
+\section{Work experience}
+
+\begin{itemize}
+
+  \item Active involvement in RESTORE 2050: A project that investigated the balancing needs, the importance of the
+           transmission grid expansion, and the methods of load management for a sustainable European power system 
+           in 2050. The project combines meta analyses and in-depth system studies using model simulations. 
+  \item Expertise in deriving solar irradiance (and by extension PV and CSP power) from clear sky model and combining 
+           Meteosat First- and Second Generation satellite images to retrieve cloud information.
+  \item Proficiency in modeling the integration of variable renewable sources to the power system and simulating the
+           storage and other balancing needs. 
+  \item Special competence in determining the influence of different PV module configurations (angle of inclinations and
+           azimuth angles of orientation) on storage and balancing needs.
+  \item Long term analysis of wind and solar power data on different temporal scales to identify their nature of variabilities 
+          and to further investigate how the mix of these two renewable sources can influence the balancing needs.
+
+\end{itemize}
+
+\newpage
+
+\section{Computer Skills}
+\begin{enumerate}
+
+  \item Proficiency in scientific programming with C  and MATLAB \\
+           Familiar with Fortran 77/90 \\
+           Familiar with high performance computing. \\
+           Familiar with bash shell scripts. \\        
+
+  \item Software Tools : IDL, Pstricks
+
+  \item Applications:  \LaTeX, Open-Office
+
+  \item Operating Systems:  Unix/Linux, OSX.\\
+  
+  \item Familiar with special binary files like NetCDF, HDF etc. \\
+
+\end{enumerate}
+
+\section{References}
+
+\begin{itemize}
+  \item Dr. Detlev Heinemann \\
+           University of Oldenburg \\
+           Institute of Physics, Energy Meteorology Group \\
+           Carl-von Ossietzky Str. 9-11, 26129 Oldenburg, Germany \\
+           Email: detlev.heinemann@uni-oldenburg.de \\
+  \item Dr. Elke Lorenz \\
+           Group Manager Energy Meteorology \\
+           Dept. Quality Assurance of PV Modules and Power Plants \\
+           Fraunhofer Institute for Solar Energy Systems ISE \\
+           Heidenhofstrasse 2, 79110 Freiburg, Germany \\
+           Email: elke.lorenz@ise.fraunhofer.de \\
+\end{itemize}
+
+\end{document}
